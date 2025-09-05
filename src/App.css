@@ -1,0 +1,171 @@
+/* App.css atualizado com layout refinado, modular e organizado */
+
+body {
+  background-color: #121212;
+  color: #f0f0f0;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+strong {
+  color: #f0f0f0;
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+}
+
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.filter-box {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  text-align: left;
+  border: 1px solid #333;
+  word-wrap: break-word;
+  white-space: normal;
+  flex: 1 1 calc(33.33% - 2rem); /* 3 por linha, com gap */
+  max-width: calc(33.33% - 2rem);
+}
+
+.filter-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+@media (max-width: 900px) {
+  .filter-box {
+    flex: 1 1 calc(50% - 2rem); /* 2 por linha */
+    max-width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .filter-box {
+    flex: 1 1 100%; /* 1 por linha */
+    max-width: 100%;
+  }
+}
+
+.filter-box h3 {
+  margin-bottom: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.2rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.1);
+}
+
+.control-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.control-panel .left-buttons,
+.control-panel .right-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #1a1a1a;
+}
+
+thead {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+td,
+th {
+  padding: 0.6rem;
+  border: 1px solid #444;
+  text-align: left;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.linha-concluida {
+  background-color: rgba(76, 175, 80, 0.15); /* verde leve */
+}
+
+.linha-sempre {
+  background-color: rgba(33, 150, 243, 0.12); /* azul claro */
+}
+
+header img {
+  max-height: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0.3rem;
+}
+
+.export-button {
+  padding: 0.6rem 1.4rem;
+  background-color: #2e7d32;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.clear-button {
+  padding: 0.6rem 1.2rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.filter-box label {
+  display: block;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
