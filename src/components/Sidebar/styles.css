@@ -1,0 +1,21 @@
+.sidebar{
+    background-color: pink;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: start;
+}
+.sidebar a{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+.sidebar a:hover{
+    background-color: black;
+    color: white;
+    transition: all 300ms;
+}

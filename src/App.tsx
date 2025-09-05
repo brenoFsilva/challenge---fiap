@@ -74,6 +74,7 @@ function App() {
         }}
       >
         <div>
+          <a href="/Home">Pagina inicial</a>
           <h1 style={{ margin: 0, fontSize: "1.8rem" }}>
             Challenge FIAP + Aché 2025
           </h1>
